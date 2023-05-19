@@ -86,7 +86,7 @@ function emptyGitHubCommit (opts) {
 
 module.exports = emptyGitHubCommit
 
-if (!module.parent) {
+if (require.main === module) {
   console.log('demo commit')
   emptyGitHubCommit({
     owner: 'bahmutov',
